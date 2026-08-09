@@ -3,14 +3,10 @@ from random import randint
 import os
 import sys
 
-# --- FIX PER I PERCORSI ---
-# Trova la cartella dove risiede questo file .py
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# Funzione helper per caricare le risorse
 def resource_path(relative_path):
     return os.path.join(BASE_DIR, relative_path)
-# ---------------------------
 
 DMARGIN = 50
 ARENA_W, ARENA_H, ASTRO_W, ASTRO_H = 600, 600, 28, 16
